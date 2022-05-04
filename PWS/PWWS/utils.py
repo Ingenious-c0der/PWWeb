@@ -875,99 +875,102 @@ def schedule_generator(start_date: datetime.date, duration_months:int,filename:s
 
 
 def extended_func(start_date: datetime.date, end_date:int,filename:str):
-    global global_done_list
-    global global_actual_done_list
-    dict_data = []
-    r = relativedelta(start_date, end_date)
-    filepath = str(Path(__file__).parent.absolute())+"\csv_files_bay\\"+ filename
+        global global_done_list
+        global global_actual_done_list
+        dict_data = []
+        r = relativedelta(start_date, end_date)
+        filepath = str(Path(__file__).parent.absolute())+"\csv_files_bay\\"+ filename
 
-    months_difference = (r.years * 12) + r.months
-    schedule_dict = schedule_generator(start_date,months_difference,filepath)
-    filename_ex = filepath
-    for date , soc_list in schedule_dict.items():
-        for i in range(2):
-            if soc_list[i] not in global_actual_done_list:
-                global_actual_done_list.append(soc_list[i])
+        months_difference = (r.years * 12) + r.months
+        schedule_dict = schedule_generator(start_date,months_difference,filepath)
+        filename_ex = filepath
+        for date , soc_list in schedule_dict.items():
+            for i in range(2):
+                if soc_list[i] not in global_actual_done_list:
+                    global_actual_done_list.append(soc_list[i])
 
-    unlucky_soc = []
-    for i in global_done_list:
-        if i not in global_actual_done_list and i not in unlucky_soc:
-            unlucky_soc.append(i)
+        unlucky_soc = []
+        for i in global_done_list:
+            if i not in global_actual_done_list and i not in unlucky_soc:
+                unlucky_soc.append(i)
 
-    for date , soc_list in schedule_dict.items():
-        if soc_list[1] == None:
-            soc_list[1] = get_my_unlucky_pair(unlucky_soc,soc_list[0],filename_ex)
-    schedule_quality = []
-    for date , soc_list in schedule_dict.items():
-        schedule_quality.append(are_in_same_area(soc_list[0],soc_list[1],filename_ex))
-        dict_data.append({'Date':date.split()[0],'Society 1':soc_list[0],'Society 2':soc_list[1],'Area':soc_list[-1],'Zone':get_zone_from_area_name(soc_list[-1],filename_ex),'Week Number':date.split()[1],'Standard':(get_standard_from_name(soc_list[0],filename_ex),get_standard_from_name(soc_list[1],filename_ex)),'Flat Count':(get_flat_count_from_name(soc_list[0],filename_ex),get_flat_count_from_name(soc_list[1],filename_ex))})
+        for date , soc_list in schedule_dict.items():
+            if soc_list[1] == None:
+                soc_list[1] = get_my_unlucky_pair(unlucky_soc,soc_list[0],filename_ex)
+        schedule_quality = []
+        for date , soc_list in schedule_dict.items():
+            schedule_quality.append(are_in_same_area(soc_list[0],soc_list[1],filename_ex))
+            dict_data.append({'Date':date.split()[0],'Society 1':soc_list[0],'Society 2':soc_list[1],'Area':soc_list[-1],'Zone':get_zone_from_area_name(soc_list[-1],filename_ex),'Week Number':date.split()[1],'Standard':(get_standard_from_name(soc_list[0],filename_ex),get_standard_from_name(soc_list[1],filename_ex)),'Flat Count':(get_flat_count_from_name(soc_list[0],filename_ex),get_flat_count_from_name(soc_list[1],filename_ex))})
 
 
-    #did not get chance list 
-    nope = []
-    nope_helper = [ ]
-    with open(filepath,'r') as f:
-            data = list(csv.reader(f))
-            for i in data:
-                soc_name = i[1]
-                if soc_name not in global_actual_done_list and soc_name.lower().strip() not in nope_helper :
-                    nope.append({'Date':'To be decided','Society 1':soc_name,'Society 2':soc_name,'Area':i[4],'Zone':i[3],'Week Number':'To be decided','Standard':get_standard_from_name(soc_name,filename_ex),'Flat Count':get_flat_count_from_name(soc_name,filename_ex)})
-                    nope_helper.append(soc_name.lower().strip())
+        #did not get chance list 
+        nope = []
+        nope_helper = [ ]
+        with open(filepath,'r') as f:
+                data = list(csv.reader(f))
+                for i in data:
+                    soc_name = i[1]
+                    if soc_name not in global_actual_done_list and soc_name.lower().strip() not in nope_helper :
+                        nope.append({'Date':'To be decided','Society 1':soc_name,'Society 2':soc_name,'Area':i[4],'Zone':i[3],'Week Number':'To be decided','Standard':get_standard_from_name(soc_name,filename_ex),'Flat Count':get_flat_count_from_name(soc_name,filename_ex)})
+                        nope_helper.append(soc_name.lower().strip())
 
-    zone_list = [[int(x.split()[-1]),get_zone_from_area_name(y[2],filename_ex)] for x,y in schedule_dict.items()]
-    zone_list.sort(key = lambda x:x[0])
+        zone_list = [[int(x.split()[-1]),get_zone_from_area_name(y[2],filename_ex)] for x,y in schedule_dict.items()]
+        zone_list.sort(key = lambda x:x[0])
 
-    #creating a new csv file for truck 2 input 
-    intermidiatefilepath = filepath.split('.')[0] + '_intermediate.csv'
-    with open(filepath, 'r') as inp, open(f'{intermidiatefilepath}', 'w') as out:
-        writer = csv.writer(out)
-        for row in csv.reader(inp):
-            if row[1].lower().strip() in nope_helper:
-                writer.writerow(row)
-    df = pd.read_csv(f'{intermidiatefilepath}')
-    df.to_csv(f'{intermidiatefilepath}',index=False)
-    global_done_list = [ ]
-    tc2_schedule_dict = schedule_generator(datetime.date(2022,2,22),4,f'{intermidiatefilepath}')
-    filename_ex = f'{intermidiatefilepath}'
-    for date , soc_list in tc2_schedule_dict.items():
-        for i in range(2):
-            if soc_list[i] not in global_actual_done_list:
-                global_actual_done_list.append(soc_list[i])
+        #creating a new csv file for truck 2 input 
+        intermidiatefilepath = filepath.split('.')[0] + '_intermediate.csv'
+        with open(filepath, 'r') as inp, open(f'{intermidiatefilepath}', 'w') as out:
+            writer = csv.writer(out)
+            for row in csv.reader(inp):
+                if row[1].lower().strip() in nope_helper:
+                    writer.writerow(row)
+        df = pd.read_csv(f'{intermidiatefilepath}')
+        df.to_csv(f'{intermidiatefilepath}',index=False)
+        global_done_list = [ ]
+        tc2_schedule_dict = schedule_generator(datetime.date(2022,2,22),4,f'{intermidiatefilepath}')
+        filename_ex = f'{intermidiatefilepath}'
+        for date , soc_list in tc2_schedule_dict.items():
+            for i in range(2):
+                if soc_list[i] not in global_actual_done_list:
+                    global_actual_done_list.append(soc_list[i])
 
-    unlucky_soc = []
-    for i in global_done_list:
-        if i not in global_actual_done_list and i not in unlucky_soc:
-            unlucky_soc.append(i)
+        unlucky_soc = []
+        for i in global_done_list:
+            if i not in global_actual_done_list and i not in unlucky_soc:
+                unlucky_soc.append(i)
 
-    for date , soc_list in tc2_schedule_dict.items():
-        if soc_list[1] == None:
-            soc_list[1] = get_my_unlucky_pair(unlucky_soc,soc_list[0],filename_ex)
-    schedule_quality = []
-    for date , soc_list in tc2_schedule_dict.items():
-        schedule_quality.append(are_in_same_area(soc_list[0],soc_list[1],filename_ex))
-        dict_data.append({'Date':date.split()[0],'Society 1':soc_list[0],'Society 2':soc_list[1],'Area':get_area_from_name(soc_list[0],filename_ex),'Zone':get_zone_from_soc_name(soc_list[0],filename_ex),'Week Number':date.split()[1],'Standard':(get_standard_from_name(soc_list[0],filename_ex),get_standard_from_name(soc_list[1],filename_ex)),'Flat Count':(get_flat_count_from_name(soc_list[0],filename_ex),get_flat_count_from_name(soc_list[1],filename_ex))})
+        for date , soc_list in tc2_schedule_dict.items():
+            if soc_list[1] == None:
+                soc_list[1] = get_my_unlucky_pair(unlucky_soc,soc_list[0],filename_ex)
+        schedule_quality = []
+        for date , soc_list in tc2_schedule_dict.items():
+            schedule_quality.append(are_in_same_area(soc_list[0],soc_list[1],filename_ex))
+            dict_data.append({'Date':date.split()[0],'Society 1':soc_list[0],'Society 2':soc_list[1],'Area':get_area_from_name(soc_list[0],filename_ex),'Zone':get_zone_from_soc_name(soc_list[0],filename_ex),'Week Number':date.split()[1],'Standard':(get_standard_from_name(soc_list[0],filename_ex),get_standard_from_name(soc_list[1],filename_ex)),'Flat Count':(get_flat_count_from_name(soc_list[0],filename_ex),get_flat_count_from_name(soc_list[1],filename_ex))})
 
-    dict_data+=nope
-    #excel conversion 
-    final_csv_path = filepath.split('.')[0] + '_final.csv'
-    csv_file_name = f"{final_csv_path}"
-    csv_file = csv_file_name
-    csv_columns = ['Date','Society 1','Society 2','Area','Zone',"Week Number",'Standard','Flat Count']
-    try:
-        with open(csv_file, 'w') as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
-            writer.writeheader()
-            for data in dict_data:
-                writer.writerow(data)
-    except IOError:
-        print("I/O error")
+        dict_data+=nope
+        #excel conversion 
+        final_csv_path = filepath.split('.')[0] + '_final.csv'
+        csv_file_name = f"{final_csv_path}"
+        csv_file = csv_file_name
+        csv_columns = ['Date','Society 1','Society 2','Area','Zone',"Week Number",'Standard','Flat Count']
+        try:
+            with open(csv_file, 'w') as csvfile:
+                writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
+                writer.writeheader()
+                for data in dict_data:
+                    writer.writerow(data)
+        except IOError:
+            print("I/O error")
+            return -1
 
-    df_new = pd.read_csv(csv_file_name)
-    final_excel_path = str(Path(__file__).parent.absolute())+"\excel_files_bay\\"+filename.split('.')[0]+".xlsx"
-    schedule_xlsx = pd.ExcelWriter(f'{final_excel_path}')
-    df_new.to_excel(schedule_xlsx, index = False)
+        df_new = pd.read_csv(csv_file_name)
+        final_excel_path = str(Path(__file__).parent.absolute())+"\excel_files_bay\\"+filename.split('.')[0]+".xlsx"
+        schedule_xlsx = pd.ExcelWriter(f'{final_excel_path}')
+        df_new.to_excel(schedule_xlsx, index = False)
 
-    schedule_xlsx.save()
+        schedule_xlsx.save()
+
+
 
 
 

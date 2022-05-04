@@ -7,7 +7,18 @@
 </head>
 <body>
                     
-                  <button>Upload</button>
+  <form  method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <br>
+   <input type="file" name="file" id="file">
+   <label for="start_date">The start day for schedule</label>
+   <input type="date" id="start_date" name="start_date">
+    <label for="end_date">The end day for schedule</label>
+    <input type="date" id="end_date" name="end_date">
+
+    <br>
+    <input type="submit" name="submit" value="Upload">
+  </form>
 
 </body>
 
