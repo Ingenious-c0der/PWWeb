@@ -969,6 +969,7 @@ def extended_func(start_date: datetime.date, end_date:int,filename:str):
         df_new.to_excel(schedule_xlsx, index = False)
 
         schedule_xlsx.save()
+        return final_excel_path
 
 
 

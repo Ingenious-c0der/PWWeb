@@ -1,0 +1,199 @@
+Date,Society 1,Society 2,Area,Zone,Week Number,Standard,Flat Count
+03-08-2022,Ruturang,Karishma Soc,kothrud,Central,2,"('Medium', 'Medium')","('200', '400')"
+03-09-2022,Sarita Vaibhav,Sun Satellite,sinhagad road,Central,2,"('Medium', 'Medium')","('300', '181')"
+03-10-2022,Sun Orbit,Sarita Vihar,sinhagad road,Central,2,"('Medium', 'Medium')","('160', '170')"
+03-11-2022,Suvarna Rekha Shree,Shweta Soc,sinhagad road,Central,2,"('Medium', 'Medium')","('170', '100')"
+03-12-2022,sun paradise,,sinhagad road,Central,2,"('Medium', None)","('175', None)"
+03-13-2022,State Bank Nagar-,Vardhamanpura,bibwewadi,Central,2,"('Worst', 'Worst')","('300', '340')"
+04-12-2022,Gera Empress,Rohan leher,baner,West,7,"('Medium', 'Medium')","('200', '300')"
+04-13-2022,Lakshmi deep,Millenium Acropolis,wakad,West,7,"('Worst', 'Medium')","('228', '181')"
+04-14-2022,Ivory Estate,DSK Gandhkosh,baner,West,7,"('Medium', 'Medium')","('500', '280')"
+04-15-2022,Park Ivory,Mont Vert Seville,wakad,West,7,"('Medium', 'Medium')","('450', '500')"
+04-16-2022,Life Republic-R4,Life Republic-R7,hinjewadi,West,7,"('Angel', 'Angel')","('800', '800')"
+04-17-2022,Blue Ridge-Unit A,Life Republic- R7,hinjewadi,West,7,"('Angel', 'Angel')","('800', '800')"
+05-17-2022,Goodwill Soc,,ravet,West,12,"('Medium', None)","('250', None)"
+05-18-2022,Blue Bells AUra,Felicitia,baner,West,12,"('Medium', 'Medium')","('120', '130')"
+05-19-2022,Pinnac Anand,,karvenagar,West,12,"('Medium', None)","('150', None)"
+05-20-2022,Vardhaman Residency,Palash Housing Society,wakad,West,12,"('Medium', 'Medium')","('250', '250')"
+05-21-2022,Life Republic-R4,Life Republic-R7,hinjewadi,West,12,"('Angel', 'Angel')","('800', '800')"
+05-22-2022,Blue Ridge-Unit A,Life Republic- R7,hinjewadi,West,12,"('Angel', 'Angel')","('800', '800')"
+03-01-2022,Iris,Mont vert biaritz phase 1,baner,West,1,"('Medium', 'Medium')","('200', '88')"
+03-02-2022,Sukhwani Sepia,Kalpataru Splendour,wakad,West,1,"('Medium', 'Medium')","('200', '327')"
+03-03-2022,Uday HillTop,Hallmark Soc,ravet,West,1,"('Medium', 'Medium')","('225', '300')"
+03-04-2022,Peace Valley,Aureate,pimple saudagar,West,1,"('Medium', 'Medium')","('280', '120')"
+03-05-2022,Life Republic-R4,Life Republic-R7,hinjewadi,West,1,"('Angel', 'Angel')","('800', '800')"
+03-06-2022,Blue Ridge-Unit A,Life Republic- R7,hinjewadi,West,1,"('Angel', 'Angel')","('800', '800')"
+04-05-2022,Shivam Society,Rajveer Palace,pimple saudagar,West,6,"('Medium', 'Medium')","('160', '200')"
+04-06-2022,S3 Lifestyle apartment,JARVARI,pimple saudagar,West,6,"('Medium', 'Medium')","('200', '317')"
+04-07-2022,Valle Vista,Vallonia,bavdhan,West,6,"('Medium', 'Medium')","('200', '200')"
+04-08-2022,Yogiraj Foundation,,talegao,West,6,"('Medium', None)","('200', None)"
+04-09-2022,Life Republic-R4,Life Republic-R7,hinjewadi,West,6,"('Angel', 'Angel')","('800', '800')"
+04-10-2022,Blue Ridge-Unit A,Life Republic- R7,hinjewadi,West,6,"('Angel', 'Angel')","('800', '800')"
+05-10-2022,Forest trails,,bhugaon,West,11,"('Medium', None)","('250', None)"
+05-11-2022,NEA,,sus,West,11,"('Medium', None)","('200', None)"
+05-12-2022,Life Republic-R3,KUL Echoluch,hinjewadi,West,11,"('Medium', 'Worst')","('600', '700')"
+05-13-2022,High Mont,Blue Ridge-C tower,hinjewadi,West,11,"('Medium', 'Medium')","('450', '650')"
+05-14-2022,Life Republic-R4,Life Republic-R7,hinjewadi,West,11,"('Angel', 'Angel')","('800', '800')"
+05-15-2022,Blue Ridge-Unit A,Life Republic- R7,hinjewadi,West,11,"('Angel', 'Angel')","('800', '800')"
+06-14-2022,Iris,Mont vert biaritz phase 1,baner,West,16,"('Medium', 'Medium')","('200', '88')"
+06-15-2022,Sukhwani Sepia,Kalpataru Splendour,wakad,West,16,"('Medium', 'Medium')","('200', '327')"
+06-16-2022,Uday HillTop,Hallmark Soc,ravet,West,16,"('Medium', 'Medium')","('225', '300')"
+06-17-2022,Peace Valley,Aureate,pimple saudagar,West,16,"('Medium', 'Medium')","('280', '120')"
+06-18-2022,Life Republic-R4,Life Republic-R7,hinjewadi,West,16,"('Angel', 'Angel')","('800', '800')"
+06-19-2022,Blue Ridge-Unit A,Life Republic- R7,hinjewadi,West,16,"('Angel', 'Angel')","('800', '800')"
+03-22-2022,Alcon Renaissant ,Nyati empire,kharadi,North,4,"('Medium', 'Medium')","('200', '300')"
+03-23-2022,Gera Trinity Tower,Ganga Constella,kharadi,North,4,"('Medium', 'Medium')","('250', '400')"
+03-24-2022,Aeropolis,Pride Aashiyana,dhanori,North,4,"('Medium', 'Medium')","('330', '450')"
+03-25-2022,Atria Soc,Goodwill 24 CHS,dhanori,North,4,"('Worst', 'Medium')","('330', '250')"
+03-26-2022,Ivy Estate,,wagholi,North,4,"('Medium', None)","('800', None)"
+03-27-2022,XERBIA,,chakan,North,4,"('Angel', None)","('1200', None)"
+04-26-2022,Rohan Mithila- E1-E9,Konark Nagar,vimannagar,North,9,"('Medium', 'Medium')","('200', '300')"
+04-27-2022,Eden Garden,Ganga Nebula,vimannagar,North,9,"('Medium', 'Medium')","('300', '300')"
+04-28-2022,IVY Estate,,wagholi,North,9,"('Medium', None)","('800', None)"
+04-29-2022,Rohan Mithila-A-Y,,vimannagar,North,9,"('Worst', None)","('200', None)"
+04-30-2022,Alcon Renaissant,Nyati Empire,kharadi,North,9,"('Medium', 'Medium')","('200', '300')"
+05-01-2022,XERBIA,,chakan,North,9,"('Angel', None)","('1200', None)"
+03-29-2022,Mahatma Soc,Sigma One,kothrud,Central,5,"('Medium', 'Medium')","('300', '132')"
+03-30-2022,Kasturkunj,,bhosalenagar,Central,5,"('Medium', None)","('250', None)"
+03-31-2022,Viola,Atul Nagar,warje,Central,5,"('Medium', 'Worst')","('250', '300')"
+04-01-2022,Soba Savera,Gangadham Phase 2,bibwewadi,Central,5,"('Medium', 'Medium')","('150', '740')"
+04-02-2022,Shantikunj Soc,,camp,Central,5,"('Worst', None)","('100', None)"
+04-03-2022,9 green park,9 Green Park,sahakarnagar,Central,5,"('Medium', 'Medium')","('120', '120')"
+05-03-2022,Westend village ,Westend Village,bhusari colony,Central,10,"('Medium', 'Medium')","('200', '200')"
+05-04-2022,Parth Enclave,Pinnac Anand ,karvenagar,Central,10,"('Medium', 'Medium')","('200', '150')"
+05-05-2022,Sun Universe ,Sudatta sankul,sinhagad road,Central,10,"('Medium', 'Medium')","('750', '180')"
+05-06-2022,Kumar parisar,Springfield,kothrud,Central,10,"('Medium', 'Medium')","('200', '250')"
+05-07-2022,Om avishkar(Sneh paradise),Vaatsalyapuram-Kumre,kothrud,Central,10,"('Medium', 'Medium')","('150', '200')"
+05-08-2022,Sundar Sahwas Ph2,Sun Paradise,sinhagad road,Central,10,"('Worst', 'Medium')","('200', '175')"
+06-07-2022,Shivtara society,Ajantha Avenue,kothrud,Central,15,"('Medium', 'Medium')","('200', '400')"
+06-08-2022,Indradhanu Apartments,Rahul Nagar,kothrud,Central,15,"('Medium', 'Medium')","('200', '300')"
+06-09-2022,House of Aadya,,deccan,Central,15,"('Worst', None)","('1', None)"
+06-10-2022,Atul Park Ph1,Oval Nest,warje,Central,15,"('Worst', 'Worst')","('300', '300')"
+06-11-2022,Sun Universe,Sudatta Sankul,sinhagad road,Central,15,"('Medium', 'Medium')","('750', '180')"
+06-12-2022,Sneh Paradise,Springfield ,kothrud,Central,15,"('Medium', 'Medium')","('250', '250')"
+To be decided,Society,Society,Area,City ZOne,To be decided,,No of flats
+To be decided,Yogiraj Foundation,Yogiraj Foundation,Talegao,West,To be decided,Medium,200
+To be decided,Shantikunj Soc,Shantikunj Soc,Camp,Central,To be decided,Worst,100
+To be decided,Mahatma Soc,Mahatma Soc,Kothrud,Central,To be decided,Medium,300
+To be decided,Sigma One,Sigma One,Kothrud,Central,To be decided,Medium,132
+To be decided,Forest trails,Forest trails,Bhugaon,West,To be decided,Medium,250
+To be decided,Kasturkunj,Kasturkunj,Bhosalenagar,Central,To be decided,Medium,250
+To be decided,9 Green Park,9 Green Park,Sahakarnagar,Central,To be decided,Medium,120
+To be decided,Iris,Iris,Baner,West,To be decided,Medium,200
+To be decided,Kumar parisar,Kumar parisar,Kothrud,Central,To be decided,Medium,200
+To be decided,Mont vert biaritz phase 1,Mont vert biaritz phase 1,Baner,West,To be decided,Medium,88
+To be decided,Gera Empress,Gera Empress,Baner,West,To be decided,Medium,200
+To be decided,Sukhwani Sepia,Sukhwani Sepia,Wakad,West,To be decided,Medium,200
+To be decided,Springfield,Springfield,Kothrud,Central,To be decided,Medium,250
+To be decided,Om avishkar(Sneh paradise),Om avishkar(Sneh paradise),Kothrud,Central,To be decided,Medium,150
+To be decided,Sundar Sahwas Ph2,Sundar Sahwas Ph2,Sinhagad road,Central,To be decided,Worst,200
+To be decided,House of Aadya,House of Aadya,Deccan ,Central,To be decided,Worst,1
+To be decided,Atul Nagar,Atul Nagar,Warje,Central,To be decided,Worst,300
+To be decided,Soba Savera,Soba Savera,Bibwewadi,Central,To be decided,Medium,150
+To be decided,Vaatsalyapuram-Kumre,Vaatsalyapuram-Kumre,Kothrud,Central,To be decided,Medium,200
+To be decided,Atul Park Ph1,Atul Park Ph1,Warje,Central,To be decided,Worst,300
+To be decided,Rohan leher,Rohan leher,Baner,West,To be decided,Medium,300
+To be decided,Shivtara society,Shivtara society,Kothrud,Central,To be decided,Medium,200
+To be decided,Ajantha Avenue,Ajantha Avenue,Kothrud,Central,To be decided,Medium,400
+To be decided,Lakshmi deep,Lakshmi deep,Wakad,West,To be decided,Worst,228
+To be decided,Kalpataru Splendour,Kalpataru Splendour,Wakad,West,To be decided,Medium,327
+To be decided,Millenium Acropolis,Millenium Acropolis,Wakad,West,To be decided,Medium,181
+To be decided,Uday HillTop,Uday HillTop,Ravet,West,To be decided,Medium,225
+To be decided,Westend Village,Westend Village,Bhusari colony,Central,To be decided,Medium,200
+To be decided,Ivory Estate,Ivory Estate,Baner,West,To be decided,Medium,500
+To be decided,Peace Valley,Peace Valley,Pimple Saudagar,West,To be decided,Medium,280
+To be decided,DSK Gandhkosh,DSK Gandhkosh,Baner,West,To be decided,Medium,280
+To be decided,Park Ivory,Park Ivory,Wakad,West,To be decided,Medium,450
+To be decided,Blue Bells AUra,Blue Bells AUra,Baner,West,To be decided,Medium,120
+To be decided,Felicitia,Felicitia,Baner,West,To be decided,Medium,130
+To be decided,Indradhanu Apartments,Indradhanu Apartments,Kothrud,Central,To be decided,Medium,200
+To be decided,Sun Universe,Sun Universe,Sinhagad road,Central,To be decided,Medium,750
+To be decided,Sudatta Sankul,Sudatta Sankul,Sinhagad road,Central,To be decided,Medium,180
+To be decided,Pinnac Anand,Pinnac Anand,Karvenagar,West,To be decided,Medium,150
+To be decided,Rahul Nagar,Rahul Nagar,Kothrud,Central,To be decided,Medium,300
+To be decided,Mont Vert Seville,Mont Vert Seville,Wakad,West,To be decided,Medium,500
+To be decided,Vardhaman Residency,Vardhaman Residency,Wakad,West,To be decided,Medium,250
+To be decided,Sneh Paradise,Sneh Paradise,Kothrud,Central,To be decided,Medium,250
+To be decided,Sarita Vaibhav,Sarita Vaibhav,Sinhagad road,Central,To be decided,Medium,300
+To be decided,Swarnavilas,Swarnavilas,Baner,West,To be decided,Medium,45
+To be decided,Aureate,Aureate,Pimple Saudagar,West,To be decided,Medium,120
+To be decided,Shivam Society,Shivam Society,Pimple Saudagar,West,To be decided,Medium,160
+To be decided,Somani Residency,Somani Residency,Punawle,West,To be decided,Worst,250
+To be decided,Palash Housing Society,Palash Housing Society,Wakad,West,To be decided,Medium,250
+To be decided,sun paradise,sun paradise,Sinhagad road,Central,To be decided,Medium,175
+To be decided,jardin,jardin,Baner,West,To be decided,Medium,250
+To be decided,beverly hills,beverly hills,Baner,West,To be decided,Medium,250
+To be decided,Aeropolis,Aeropolis,Dhanori,North,To be decided,Medium,330
+To be decided,Atria Soc,Atria Soc,Dhanori,North,To be decided,Worst,330
+To be decided,Hallmark Soc,Hallmark Soc,Ravet,West,To be decided,Medium,300
+To be decided,Goodwill Soc,Goodwill Soc,Ravet,West,To be decided,Medium,250
+To be decided,Gera Trinity Tower,Gera Trinity Tower,Kharadi,North,To be decided,Medium,250
+To be decided,High Mont,High Mont,Hinjewadi,West,To be decided,Medium,450
+To be decided,Ruturang,Ruturang,Kothrud,Central,To be decided,Medium,200
+To be decided,Shiv Sai Paradise,Shiv Sai Paradise,Thane,Thane,To be decided,,375
+To be decided,Hiranandani Meadows-Mayflower,Hiranandani Meadows-Mayflower,Thane,Thane,To be decided,,300
+To be decided,Rajveer Palace,Rajveer Palace,Pimple Saudagar,West,To be decided,Medium,200
+To be decided,S3 Lifestyle apartment,S3 Lifestyle apartment,Pimple Saudagar,West,To be decided,Medium,200
+To be decided,Capitol Towers,Capitol Towers,Wakad,West,To be decided,Worst,200
+To be decided,Comfort Zone,Comfort Zone,Baner,West,To be decided,Medium,500
+To be decided,Blue Ridge-C tower,Blue Ridge-C tower,Hinjewadi,West,To be decided,Medium,650
+To be decided,KUL Echoluch,KUL Echoluch,Hinjewadi,West,To be decided,Worst,700
+To be decided,Rohit walimbe Online,Rohit walimbe Online,Baner,West,To be decided,Medium,0
+To be decided,Life Republic-R3,Life Republic-R3,Hinjewadi,West,To be decided,Medium,600
+To be decided,Life Republic-R4,Life Republic-R4,Hinjewadi,West,To be decided,Angel,800
+To be decided,Life Republic-R7,Life Republic-R7,Hinjewadi,West,To be decided,Angel,800
+To be decided,IVY Estate,IVY Estate,Wagholi,North,To be decided,Medium,800
+To be decided,Blue Ridge-Unit A,Blue Ridge-Unit A,Hinjewadi,West,To be decided,Angel,800
+To be decided,Karishma Soc,Karishma Soc,Kothrud,Central,To be decided,Medium,400
+To be decided,Gangadham Phase 2,Gangadham Phase 2,Bibwewadi,Central,To be decided,Medium,740
+To be decided,State Bank Nagar-,State Bank Nagar-,Bibwewadi,Central,To be decided,Worst,300
+To be decided,Sun Satellite,Sun Satellite,Sinhagad road,Central,To be decided,Medium,181
+To be decided,Sun Orbit,Sun Orbit,Sinhagad road,Central,To be decided,Medium,160
+To be decided,JARVARI,JARVARI,Pimple Saudagar,West,To be decided,Medium,317
+To be decided,PARK ROYALE,PARK ROYALE,Pimple Saudagar,West,To be decided,Medium,430
+To be decided,BIARITZ 1,BIARITZ 1,Baner,West,To be decided,Medium,200
+To be decided,NEA,NEA,Sus,West,To be decided,Medium,200
+To be decided,XERBIA,XERBIA,Chakan,North,To be decided,Angel,1200
+To be decided,Oval Nest,Oval Nest,Warje,Central,To be decided,Worst,300
+To be decided,Florencia,Florencia,Wakad,West,To be decided,Medium,300
+To be decided,Rahul Park A wing,Rahul Park A wing,Warje,Central,To be decided,Worst,87
+To be decided,Vardhamanpura,Vardhamanpura,Bibwewadi,Central,To be decided,Worst,340
+To be decided,Pride Aashiyana,Pride Aashiyana,Dhanori,North,To be decided,Medium,450
+To be decided,Goodwill 24 CHS,Goodwill 24 CHS,Dhanori,North,To be decided,Medium,250
+To be decided,Rahul Park C,Rahul Park C,Warje,Central,To be decided,Worst,100
+To be decided,Royal Rahadki Ph1,Royal Rahadki Ph1,Pimple Saudagar,West,To be decided,Medium,500
+To be decided,Rose Valley,Rose Valley,Pimple Saudagar,West,To be decided,Medium,300
+To be decided,Majestic aqua,Majestic aqua,Phursungi,East,To be decided,Medium,450
+To be decided,Armada,Armada,Wakad,West,To be decided,Medium,250
+To be decided,Shivnagri,Shivnagri,Kothrud,Central,To be decided,Medium,200
+To be decided,Sarita Vihar,Sarita Vihar,Sinhagad road,Central,To be decided,Medium,170
+To be decided,Suvarna Rekha Shree,Suvarna Rekha Shree,Sinhagad road,Central,To be decided,Medium,170
+To be decided,Shweta Soc,Shweta Soc,Sinhagad road,Central,To be decided,Medium,100
+To be decided,Parth Enclave,Parth Enclave,Karvenagar,Central,To be decided,Medium,200
+To be decided,Rose County,Rose County,Pimple Saudagar,West,To be decided,Medium,380
+To be decided,Megapolis Symphony,Megapolis Symphony,Hinjewadi,West,To be decided,Worst,380
+To be decided,SHONEST,SHONEST,Wakad,West,To be decided,Medium,300
+To be decided,SILVER SKY,SILVER SKY,Wakad,West,To be decided,Medium,300
+To be decided,Life Republic- R7,Life Republic- R7,Hinjewadi,West,To be decided,Angel,800
+To be decided,Life Republic- R4,Life Republic- R4,Hinjewadi,West,To be decided,Angel,800
+To be decided,Rohan Mithila- E1-E9,Rohan Mithila- E1-E9,Vimannagar,North,To be decided,Medium,200
+To be decided,Rohan Mithila-A-Y,Rohan Mithila-A-Y,Vimannagar,North,To be decided,Worst,200
+To be decided,Alcon Renaissant,Alcon Renaissant,Kharadi,North,To be decided,Medium,200
+To be decided,Nyati Empire,Nyati Empire,Kharadi,North,To be decided,Medium,300
+To be decided,Konark Nagar,Konark Nagar,Vimannagar,North,To be decided,Medium,300
+To be decided,Ganga Constella,Ganga Constella,Kharadi,North,To be decided,Medium,400
+To be decided,Eden Garden,Eden Garden,Vimannagar,North,To be decided,Medium,300
+To be decided,Ganga Nebula,Ganga Nebula,Vimannagar,North,To be decided,Medium,300
+To be decided,Opus 77,Opus 77,Wakad,West,To be decided,Medium,200
+To be decided,Malpani green,Malpani green,Wakad,West,To be decided,Medium,200
+To be decided,Loksangam,Loksangam,Aundh,West,To be decided,Worst,200
+To be decided,Shanti Niketan,Shanti Niketan,Aundh,West,To be decided,Worst,200
+To be decided,Skyline,Skyline,Wakad,West,To be decided,Medium,300
+To be decided,Windwards,Windwards,Wakad,West,To be decided,Medium,300
+To be decided,Mont vert tropez,Mont vert tropez,Wakad,West,To be decided,Medium,300
+To be decided,Sonigara Kesar,Sonigara Kesar,Wakad,West,To be decided,Medium,300
+To be decided,Kunal Icon,Kunal Icon,Pimple Saudagar,West,To be decided,Medium,400
+To be decided,Regalia Bavdhan,Regalia Bavdhan,Bavdhan,West,To be decided,Worst,165
+To be decided,Valle Vista,Valle Vista,Bavdhan,West,To be decided,Medium,200
+To be decided,Viola,Viola,Warje,Central,To be decided,Medium,250
+To be decided,Vallonia,Vallonia,Bavdhan,West,To be decided,Medium,200
