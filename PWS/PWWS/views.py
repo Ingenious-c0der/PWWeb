@@ -1,4 +1,5 @@
 from pathlib import Path
+from django.forms import ValidationError
 from django.http import FileResponse, Http404, HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.views.generic import TemplateView , CreateView , View , FormView , DetailView
@@ -12,6 +13,7 @@ import datetime
 import os
 
 file_path = "" 
+
 class LoginView(FormView):
     template_name = "login.html"
     form_class = LoginForm 
@@ -21,11 +23,14 @@ class LoginView(FormView):
         pword = form.cleaned_data["password"]
         print(uname,pword)
         user = authenticate(username = uname,password = pword)
+       
         if user is not None:
             login(self.request,user)
+            return super().form_valid(form)
         else:
             form.add_error(None,"Invalid username or password")
-        return super().form_valid(form)
+            return redirect("PWWS:login")
+       
 
 class UploadFileView(FormView):
     template_name = "upload_file.html"
@@ -41,7 +46,7 @@ class UploadFileView(FormView):
             document = UploadFile.objects.create(file=file,start_date=start_date,end_date=end_date)
             document.save()
             x = extended_func(datetime.date(2022,2,22),datetime.date(2022,5,22),file.name)
-            
+            print(x)
             if x != -1:
                 global file_path
                 file_path = x
